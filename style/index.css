@@ -395,7 +395,6 @@ iframe {
 
 .form .form-txt {
     flex-basis: 48%;
-    padding: 50px;
 }
 
 .form .form-txt h4 {
@@ -771,11 +770,11 @@ footer {
 }
 .contact {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contact h2 {
