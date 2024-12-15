@@ -132,7 +132,7 @@ body {
         top: 20px;
         left: 20px;
         z-index: 5;
-        opacity: 1;
+        opacity: 0.5;
         cursor: pointer;
     }
     .navbar-container .hamburger-lines {
