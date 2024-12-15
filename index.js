@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
 
-document.getElementById("contacting").addEventListener("submit", function(event) {
+function submit(name,email,message) {
     event.preventDefault(); // Prevent form from submitting the default way
 
     // Get input values
@@ -39,7 +39,7 @@ document.getElementById("contacting").addEventListener("submit", function(event)
     // Construct the mailto link
     const subject = encodeURIComponent("Contact Form Submission from " + name);
     const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\nMessage: " + message);
-    const mailtoLink = `mailto:avinashj40396701@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:millecious2024@gmail.com?subject=${subject}&body=${body}`;
 
     // Open the default mail client
     window.location.href = mailtoLink;
