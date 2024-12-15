@@ -58,7 +58,7 @@
                                 <input type="text" name="name" id="name" placeholder="Name" required>
                                 <input type="email" name="email" id="email" placeholder="Email" required>
                                 <textarea name="message" id="message" cols="52" rows="7" placeholder="Message" required></textarea>
-                                <button type="submit">SEND MESSAGE</button>
+                                <button type="submit" onclick="submit(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value)">SEND MESSAGE</button>
                             </div>
                         </div>
                     </form>
