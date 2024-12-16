@@ -47,9 +47,7 @@ body {
     color: rgba(255, 255, 255, 0.945);
     margin: 0 10px;
 }
-
-
-/* //........ Navbar ........// */
+/* //........ Navbar css........// */
 
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
@@ -267,7 +265,6 @@ body {
     text-decoration: none;
     color: var(--white);
 }
-
 .home_txt button {
     background-color: var(--black);
     color: var(--white);
