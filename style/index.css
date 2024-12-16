@@ -301,7 +301,7 @@ footer {
 .footerlogo{
     width: 200px;
     height: 200px;
-    text-self: center    ;
+    align-self: center    ;
 }
 
 .footer-container .content_1 img {
