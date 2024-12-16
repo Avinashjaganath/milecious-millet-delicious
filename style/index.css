@@ -304,6 +304,7 @@ footer {
 .footerlogo{
     width: 200px;
     height: 200px;
+    text-self: center    ;
 }
 
 .footer-container .content_1 img {
@@ -855,3 +856,127 @@ footer {
 .contact-info a:hover {
     color: #333;
 }
+
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.about-section {
+    display: flex;
+    gap: 10%;
+    margin-top: 50px;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.person {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.person img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.person:hover img {
+    transform: scale(1.1);
+}
+
+.person h3 {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.person p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.details-section {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+.details-section.active {
+    display: block;
+}
+
+.details-section h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.details-section p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .person {
+        width: 150px;
+    }
+
+    .person h3 {
+        font-size: 1rem;
+    }
+
+    .person p {
+        font-size: 0.9rem;
+    }
+
+    .details-section {
+        padding: 15px;
+    }
+
+    .details-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .details-section p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .person {
+        width: 120px;
+    }
+
+    .person h3 {
+        font-size: 0.9rem;
+    }
+
+    .person p {
+        font-size: 0.8rem;
+    }
+
+    .details-section {
+        padding: 10px;
+    }
+
+    .details-section h3 {
+        font-size: 1rem;
+    }
+
+    .details-section p {
+        font-size: 0.8rem;
+    }
+}  
