@@ -37,13 +37,37 @@
                 <h1>
                     About US
                 </h1>
-            </div>
-            <div class="aboutuspara">
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam eum recusandae, quibusdam harum adipisci labore hic iste, tempore fugit quod ratione suscipit odit ea. Accusantium, eaque! Maxime accusantium corrupti in.
-                </p>
-            </div>   
+                <div class="about-section">
+                    <!-- Person 1 -->
+                    <div class="person" data-name="John Doe" data-designation="CEO" data-description="John is the visionary leader of our company, with over 20 years of experience in the tech industry.">
+                        <img src="https://via.placeholder.com/200" alt="Person 1">
+                        <h3>John Doe</h3>
+                        <p>CEO</p>
+                    </div>
+            
+                    <!-- Person 2 -->
+                    <div class="person" data-name="Jane Smith" data-designation="CTO" data-description="Jane drives our technology strategy and innovation with her expertise in AI and software development.">
+                        <img src="https://via.placeholder.com/200" alt="Person 2">
+                        <h3>Jane Smith</h3>
+                        <p>CTO</p>
+                    </div>
+            
+                    <!-- Person 3 -->
+                    <div class="person" data-name="Emily Johnson" data-designation="COO" data-description="Emily ensures operational excellence and oversees day-to-day business operations with precision.">
+                        <img src="https://via.placeholder.com/200" alt="Person 3">
+                        <h3>Emily Johnson</h3>
+                        <p>COO</p>
+                    </div>
+                </div>
+            
+                <div class="details-section" id="details">
+                    <h3 id="details-name"></h3>
+                    <p id="details-designation"></p>
+                    <p id="details-description"></p>
+                </div>
+            </section>   
         </div>
+
     </section>
 
 
@@ -60,5 +84,30 @@
             </div>
         </div>
     </footer>
+    <script>
+        const persons = document.querySelectorAll('.person');
+        const detailsSection = document.getElementById('details');
+        const detailsName = document.getElementById('details-name');
+        const detailsDesignation = document.getElementById('details-designation');
+        const detailsDescription = document.getElementById('details-description');
+
+        persons.forEach(person => {
+            person.addEventListener('mouseenter', () => {
+                const name = person.getAttribute('data-name');
+                const designation = person.getAttribute('data-designation');
+                const description = person.getAttribute('data-description');
+
+                detailsName.textContent = name;
+                detailsDesignation.textContent = designation;
+                detailsDescription.textContent = description;
+
+                detailsSection.classList.add('active');
+            });
+
+            person.addEventListener('mouseleave', () => {
+                detailsSection.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
