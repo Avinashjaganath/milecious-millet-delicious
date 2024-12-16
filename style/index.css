@@ -671,7 +671,7 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+h1,h3 {
     text-align: center;
     margin-bottom: 2rem;
     color: #333;
@@ -767,7 +767,6 @@ footer {
 }
 .contact {
     display: flex;
-    padding: 2rem;
     background-color: #f9f9f9;
     text-align: center;
     justify-content: center;
