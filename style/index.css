@@ -951,6 +951,9 @@ footer {
     .details-section p {
         font-size: 0.9rem;
     }
+    #aboutus{
+        padding: 5%;
+    }
 }
 
 @media (max-width: 480px) {
